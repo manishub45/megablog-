@@ -6,17 +6,18 @@ import { Header } from './components'
 import { Footer } from './components'
 import { Outlet } from 'react-router-dom'
 
+
 import './App.css'
 
 function App() {
   const [loading, setLoading] = useState(true)
-  const dispatch = useDispatch
+  const dispatch = useDispatch()
 
   useEffect(() => {
     authService.getCurrentUser()
-      .then((userdata) => {
-        if (userdata) {
-          dispatch(login(userdata))
+      .then((userData) => {
+        if (userData) {
+          dispatch(login(userData))
         } else {
           dispatch(logout())
         }
@@ -28,19 +29,20 @@ function App() {
 
 
 
-  return (
+  return  !loading ? (
     <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
       <div className='w-full block'>
         <Header />
         <main>
          todo
-          :  <Outlet />
+         <Outlet />
+         
         </main>
         <Footer />
       </div>
 
     </div>
-  )
+  ) : (<div>Loading...</div>)
 }
 
 export default App

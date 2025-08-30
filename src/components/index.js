@@ -11,6 +11,7 @@ import PostCard from "./PostCard"
 import Select from './Select'
 import Signup from "./Signup"
 import RTE from "./RTE"
+import PostForm from './post-form/PostForm'
 
 
 export {
@@ -27,6 +28,7 @@ export {
     Select,
     Signup,
     RTE,
+    PostForm
     
 
 }
