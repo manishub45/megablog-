@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+body {
+  background-color: #f3f4f6; /* Very light gray */
+}
+
+/* Styling for the content coming from Rich Text Editor */
+.browser-css {
+    @apply text-gray-800;
+}
+.browser-css h1, .browser-css h2, .browser-css h3, .browser-css h4, .browser-css h5, .browser-css h6 {
+    @apply font-bold mb-4 mt-6;
+}
+.browser-css h1 { @apply text-3xl; }
+.browser-css h2 { @apply text-2xl; }
+.browser-css h3 { @apply text-xl; }
+.browser-css p {
+    @apply mb-4 leading-relaxed;
+}
+.browser-css ul, .browser-css ol {
+    @apply list-inside mb-4 pl-4;
+}
+.browser-css ul {
+    @apply list-disc;
+}
+.browser-css ol {
+    @apply list-decimal;
+}
+.browser-css a {
+    @apply text-blue-600 underline hover:text-blue-800;
+}
+.browser-css b, .browser-css strong {
+    @apply font-bold;
+}
+.browser-css i, .browser-css em {
+    @apply italic;
+}
+
