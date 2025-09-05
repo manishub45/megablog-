@@ -51,14 +51,12 @@ src/
 Create a `.env` file in the root:
 
 ```env
-
 VITE_APPWRITE_URL=https://fra.cloud.appwrite.io/v1
 VITE_APPWRITE_PROJECT_ID=your_project_id
 VITE_APPWRITE_DATABASE_ID=your_database_id
 VITE_APPWRITE_COLLECTION_ID=your_collection_id
 VITE_APPWRITE_BUCKET_ID=your_bucket_id
 VITE_TINYMCE_API_KEY=your_tinymce_api_key   # optional (for production stability) 
-
 ```
 
   ## 🚀 Getting Started
@@ -113,4 +111,6 @@ Manish Ubnare
 
 🐙  [GitHub Profile](https://github.com/manishub45)
 
-“Feel free to ⭐ this repo if you like it!”
+---
+
+⭐ *Feel free to star this repo if you found it helpful!*
